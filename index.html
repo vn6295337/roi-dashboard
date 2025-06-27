@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Process Mining Success - ROI Dashboard</title>
+
+    <!-- Open Graph Meta for LinkedIn Preview -->
+    <meta property="og:title" content="Process Mining Success - ROI Dashboard" />
+    <meta property="og:description" content="See how a petrochemical giant achieved $7M projected ROI through automation, analytics, and process mining." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/vn6295337/roi-dashboard" />
+    <meta property="og:image" content="https://github.com/vn6295337/roi-dashboard/preview.jpg" />
+
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .dashboard {
+            max-width: 1200px;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        .header {
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .company-type {
+            color: #666;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .metric-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 4px solid #0066cc;
+        }
+
+        .metric-value {
+            font-size: 36px;
+            font-weight: 700;
+            color: #0066cc;
+            margin-bottom: 5px;
+        }
+
+        .metric-label {
+            color: #666;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .implementation-timeline {
+            background: #f0f7ff;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .timeline-header {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .timeline-phases {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .phase {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .phase-title {
+            font-weight: 600;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        .phase-items {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        .key-outcomes {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .outcomes-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .outcome-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 15px;
+            color: #555;
+        }
+
+        .check {
+            color: #00aa00;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .recognition {
+            background: linear-gradient(135deg, #0066cc, #004499);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .award-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .award-text {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <div class="company-type">Global Petrochemical Major</div>
+            <h1>Process Mining Success: Source-to-Pay Transformation</h1>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value">$800K</div>
+                <div class="metric-label">Savings in 6 Months</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">$7M</div>
+                <div class="metric-label">3-Year Projected Value</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">20%</div>
+                <div class="metric-label">Cycle Time Reduction</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">60%</div>
+                <div class="metric-label">Supplier Query Automation</div>
+            </div>
+        </div>
+
+        <div class="implementation-timeline">
+            <div class="timeline-header">Implementation Approach</div>
+            <div class="timeline-phases">
+                <div class="phase">
+                    <div class="phase-title">Discovery (Month 1-2)</div>
+                    <div class="phase-items">
+                        • Process mining analysis<br>
+                        • Bottleneck identification<br>
+                        • Quick win prioritization
+                    </div>
+                </div>
+                <div class="phase">
+                    <div class="phase-title">Implementation (Month 3-5)</div>
+                    <div class="phase-items">
+                        • RPA deployment in sourcing<br>
+                        • Conversational AI pilot<br>
+                        • Process optimization
+                    </div>
+                </div>
+                <div class="phase">
+                    <div class="phase-title">Scale (Month 6+)</div>
+                    <div class="phase-items">
+                        • Multi-stream rollout<br>
+                        • Change management<br>
+                        • Continuous improvement
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <div class="key-outcomes">
+                <div class="outcomes-title">Key Business Outcomes</div>
+                <div class="outcome-item">
+                    <span class="check">✓</span>
+                    Automated high-volume procurement transactions
+                </div>
+                <div class="outcome-item">
+                    <span class="check">✓</span>
+                    Reduced supplier onboarding from days to hours
+                </div>
+                <div class="outcome-item">
+                    <span class="check">✓</span>
+                    Eliminated manual three-way matching
+                </div>
+                <div class="outcome-item">
+                    <span class="check">✓</span>
+                    Real-time procurement analytics dashboard
+                </div>
+            </div>
+            <div class="recognition">
+                <div class="award-icon">🏆</div>
+                <div class="award-text">
+                    Client awarded<br />
+                    "Industry Excellence in<br />
+                    RPA Deployment"
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
